@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+	    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
+	    <link rel="icon" href="/images/favicon.jpg" type="image/x-icon"/>
+        <link href="/css/loginForm.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-md-4 col-md-offset-4 panel panel-default">
+                <h1 align = "center">Admin Create</h1>
+                <form action="/createAdmin" method="post">
+                    <p class="input-group ">
+                        <span class="input-group-addon"><span class="icon-user"></span></span>
+                        <input type="text" required class="form-control input-lg" name="username" placeholder="username" />
+                    </p>
+
+                        <p class="input-group ">
+                            <span class="input-group-addon"><span class="icon-envelope"></span></span>
+                            <input type="email" required class="form-control input-lg" name="email" placeholder="email address" />
+                        </p>
+        
+                    <p class="input-group ">
+                        <span class="input-group-addon"><span class="icon-key"></span></span>
+                        <input type="password" required class="form-control input-lg" name="password" placeholder="password" />
+                    </p>
+                    <p class="text-center">
+                        <button class="btn btn-success btn-lg">Register</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
